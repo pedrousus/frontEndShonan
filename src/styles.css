@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Tema claro */
+  .body.light-theme {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .header.light-theme {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .nav.light-theme {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .button.light-theme {
+    background-color: #f0f0f0;
+    color: #333333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .content.light-theme {
+    padding: 20px;
+  }
+  
+  .footer.light-theme {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* Tema oscuro */
+  .body.dark-theme {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .header.dark-theme {
+    background-color: #222222;
+    padding: 20px;
+  }
+  
+  .nav.dark-theme {
+    background-color: #222222;
+    padding: 10px;
+  }
+  
+  .button.dark-theme {
+    background-color: #251313;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .content.dark-theme {
+    padding: 20px;
+  }
+  
+  .footer.dark-theme {
+    background-color: #222222;
+    padding: 20px;
+  }
+  
+  /* Otros estilos específicos según necesidades */
+  #fet{
+    background-color: rgb(166, 223, 204);
+  }

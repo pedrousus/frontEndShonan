@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.datos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+.datos input{
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 10px;
+  border-radius: 2px;
+  margin: 5px;
+}
+.datos button{
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+}
+.image-list,
+.other-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.image-item,
+.other-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-button,
+.other-button {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  background: none;
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+.image-button:hover,
+.other-button:hover {
+  background-color: rgb(46, 156, 103);
+  color: rgb(48, 100, 70);
+}
+
+
+#mon{
+  background-color: rgb(128, 161, 109);
+}
+
+#custom{
+  width: 2000px;
+}
+
+#fondo {
+  background-image: url('/public/si.jpg');
+  background-color: rgba(255, 255, 255, 0.5); /* Colores tenues */
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20%; /* Reducir el tamaño de la imagen al 50% */
+  border-radius: 10px; /* Ajusta el valor según tus preferencias */
+}
+
+
+#fondo::after {
+  content: "";
+  display: block;
+  background-image: url('/public/si.jpg');
+  background-size: cover;
+  filter: grayscale(50%); /* Aplicar el filtro gris solo a la imagen */
+  opacity: 0.5;
+   /* Establecer la opacidad del 50% para el filtro gris */
+}
+#navo {
+  background-color: #5da05d; /* Cambia el color a tu preferencia */
+}
+
+#navo img {
+  width: 50px; /* Ajusta el tamaño a la mitad del tamaño original */
+}
+
+/* Establecer un fondo oscuro para todo el documento */
+
